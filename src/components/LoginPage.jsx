@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/LoginPage.css";
+import LOGO from "../assets/img/instagram-logo.png"
+import APPLE from "../assets/img/apple-button.png"
+import GOOGLE from "../assets/img/googleplay-button.png"
+
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -37,7 +41,7 @@ const LoginPage = () => {
           <div className="panel login flex direction-column">
             <h1 title="Instagram" className="flex justify-content-center">
               <img
-                src="./src/assets/img/instagram-logo.png"
+                src={LOGO}
                 alt="Instagram logo"
                 title="Instagram logo"
               />
@@ -94,12 +98,12 @@ const LoginPage = () => {
             <p>Get the app.</p>
             <div className="flex justify-content-center">
               <img
-                src="./src/assets/img/apple-button.png"
+                src={APPLE}
                 alt="Apple Store button"
                 title="Apple Store button"
               />
               <img
-                src="./src/assets/img/googleplay-button.png"
+                src={GOOGLE}
                 alt="Google Play button"
                 title="Google Play button"
               />
